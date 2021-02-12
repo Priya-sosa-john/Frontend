@@ -1,0 +1,66 @@
+body {
+    font-family: Arial;
+    color: white;
+    padding: 55px;
+  }
+  
+  .split {
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
+  
+  .left {
+    left: 0;
+    background-color: white;
+  }
+  
+  .right {
+    right: 0;
+    background-color: white;
+  }
+  
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+   button {   
+             background-color: DarkCyan;   
+             width: 85%;  
+              color: orange;   
+              padding: 15px;   
+              margin: 10px 0px;   
+              border: none;   
+              cursor: pointer;   
+               }   
+       input[type=text], input[type=password] {   
+              width: 85%;   
+              margin: 8px 0;  
+              padding: 12px 20px;   
+              display: inline-block;   
+              border: 2px solid green;   
+              box-sizing: border-box;   
+          }  
+       button:hover {   
+              opacity: 0.7;   
+          }   
+  
+  .updatepage {   
+              padding: 20px;   
+              float:right;  
+          }   
+
+         
+          
+          #div2.col-xs-6
+          {
+            padding:0px !important;
+          }

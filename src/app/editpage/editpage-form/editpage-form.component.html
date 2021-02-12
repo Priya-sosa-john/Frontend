@@ -1,0 +1,58 @@
+<form novalidate autocomplete="off" #form="ngForm" (submit)="onSubmit(form)">
+    <input type="hidden" name="OutletId" [value]="service.formData.OutletId" />
+    <div class="form-group">
+        <label>Outlet Name:</label>
+        <input class="form-control form-control-lg" placeholder="Enter Outlet Name" name="OutletName"
+            #OutletName="ngModel" [(ngModel)]="service.formData.OutletName"
+            required [class.invalid]="OutletName.invalid && OutletName.touched">
+    </div>
+    <div class="form-group">
+        <label>Landmark: </label>
+        <input class="form-control form-control-lg" placeholder="Enter Landmark" name="Landmark"
+            #Landmark="ngModel" [(ngModel)]="service.formData.Landmark"
+            required [class.invalid]="Landmark.invalid && Landmark.touched">
+    </div>
+    <div class="form-group">
+        <label>Street Name: </label>
+        <input class="form-control form-control-lg" placeholder="Enter Street Name" name="Street"
+            #Street="ngModel" [(ngModel)]="service.formData.Street"
+            required [class.invalid]="Street.invalid && Street.touched">
+    </div>
+    <div class="form-group">
+        <label>Number of FoodPackets Available : </label>
+        <input class="form-control form-control-lg" placeholder="Enter Food Packet Count" name="AvailableFoodPackets"
+            #AvailableFoodPackets="ngModel" [(ngModel)]="service.formData.AvailableFoodPackets"
+            required [class.invalid]="AvailableFoodPackets.invalid && AvailableFoodPackets.touched">
+    </div>
+    <div class="form-group">
+        <label>Number of Volunteers Required : </label>
+        <input class="form-control form-control-lg" placeholder="Enter Volunteers Count" name="RequiredVolunteers"
+            #RequiredVolunteers="ngModel" [(ngModel)]="service.formData.RequiredVolunteers"
+            required [class.invalid]="RequiredVolunteers.invalid && RequiredVolunteers.touched">
+    </div>
+    <div class="form-group">
+        <label>Food Category: </label>
+        <input class="form-control form-control-lg" list="FoodType" placeholder="Select Food Category" name="FoodType"
+            #FoodType="ngModel" [(ngModel)]="service.formData.FoodType"
+            required [class.invalid]="FoodType.invalid &&FoodType.touched">
+          <datalist id="FoodType">
+          <option value="Veg">
+          <option value="Non-Veg">
+          <option value="Both">
+          </datalist>
+    </div>
+    <div class="form-group">
+        <label>Outlet Date: </label>
+        <input class="form-control form-control-lg" list="Date" placeholder="Select Date of Outlet" name="Date"
+            #Date="ngModel" [(ngModel)]="service.formData.Date"
+            required [class.invalid]="Date.invalid &&Date.touched">
+          <datalist id="Date">
+          <option value="11/02/2021">
+          <option value="12/02/2021">
+          <option value="13/02/2021">
+          </datalist>
+    </div>
+    <div class="form-group">
+        <button class="btn btn-info btn-lg btn-block" type="submit" [disabled]="form.invalid">ADD</button>
+    </div>          
+</form>

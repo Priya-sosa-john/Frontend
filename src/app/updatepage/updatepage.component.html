@@ -1,0 +1,42 @@
+<body>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" />
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-6" id="div1">
+        <div class="updatepage"> 
+          <label>Outlet Name: </label>   <br/>
+          <input type="text" placeholder="Outlet Name" name="outlet_name" required>  <br/>
+          <label>Landmark: </label>   <br/>
+          <input type="text" placeholder="Landmark" name="landmark" required>  <br/>
+          <label>Street Name: </label>   <br/>
+          <input type="text" placeholder=" Street Name" name="streetname" required> <br/>
+          <label>Food Category: </label>   <br/>
+          
+          <input list="food category" type="text" placeholder="Select Food Category" name="f_category" required> <br/>
+  
+          <datalist id="food category">
+          <option value="Veg">
+          <option value="Non-Veg">
+          <option value="Both">
+          </datalist>
+      <button type="submit" >ADD </button>   <br/>
+         </div>
+      </div>
+      <div class="col-xs-6" id="div2">
+  
+        <div id="div2-1">
+          <div class="updatepage"> 
+            <label>Outlet Name: </label>   <br/>
+            <input type="text" placeholder="Outlet Name" name="outlet_name" required>  <br/>
+            <label>Date: </label>   <br/>
+            <input type="text" placeholder="Date for deletion" name="delete_date" required>  <br/>
+            
+            <button type="submit" > DELETE </button>   <br/>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>    
+</body>
+
+   
